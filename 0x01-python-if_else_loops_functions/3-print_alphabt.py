@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for l in range(97, 123):
-    if l == 112 or l == 101:
+for alphabet in range(97, 123):
+    if alphabet == 112 or alphabet == 101:
         continue
-    print(f"{chr(l)}", end = "")
+    print("{}".format(chr(alphabet)), end="")
