@@ -6,7 +6,7 @@ if __name__ == "__main__":
     operator = sys.argv[2]
     b = int(sys.argv[3])
 
-    if len(sys.argv) == 3:
+    if len(sys.argv) == 4:
         if operator == '+':
             result = add(a, b)
             print("{} {} {} = {}".format(a, operator, b, result))
