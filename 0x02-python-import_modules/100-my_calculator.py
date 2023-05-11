@@ -11,18 +11,10 @@ if __name__ == "__main__":
         sys.exit(1)
 
     if len(sys.argv) == 4:
-        if operator == "+":
-            result = add(a, b)
-            print("{} {} {} = {}".format(a, operator, b, result))
-        elif operator == "-":
-            result = sub(a, b)
-            print("{} {} {} = {}".format(a, operator, b, result))
-        elif operator == "*":
-            result = mul(a, b)
-            print("{} {} {} = {}".format(a, operator, b, result))
-        elif operator == "/":
-            result = div(a, b)
-            print("{} {} {} = {}".format(a, operator, b, result))
-        else:
+        operatorDict = {"+": add, "-": sub, "*": mul, "/": div}
+        result = operatorDict[operator](a, b)
+        if operator not in operatorDict.keys():
             print("Unknown operator. Available operators: +, -, * and /")
             sys.exit(1)
+        else:
+            print("{} {} {} = {}".format(a, operator, b, result))
