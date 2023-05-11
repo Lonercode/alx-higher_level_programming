@@ -12,7 +12,7 @@ if __name__ == "__main__":
         for i in range(2, argNum + 1):
             print("{}: {}".format(i-1, sys.argv[i-1]))
 
-    if argNum > 3:
+    if argNum > 2:
         print("{} arguments:".format(argNum-1))
         for i in range(2, argNum + 1):
             print("{}: {}".format(i-1, sys.argv[i-1]))
