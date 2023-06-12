@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 """ Rectangle """
 
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     """Child class to BaseGeometry class"""
+
 
     def __init__(self, width, height):
         """Initalization"""
@@ -13,9 +16,11 @@ class Rectangle(BaseGeometry):
         self.width = width
         self.height = height
 
+
     def area(self):
         """Area"""
         return self.width * self.height
+
 
     def __str__(self):
         """String"""
